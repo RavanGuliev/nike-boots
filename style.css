@@ -10,14 +10,16 @@
 body{
     background-color: #ecd2db ;
 }
-
+section{
+    padding-top: 50px;
+}
 article{
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f6f6f6;
     padding: 20px 20px;
-    margin: 10px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 
@@ -88,3 +90,29 @@ h2{
     height: 40px;
 }
 
+@media only screen and (min-width: 768px){
+    .card{
+        display: flex;
+        gap:20px;
+        flex-direction: row;
+        margin: 10px auto;
+        img{
+            width: 350px;
+    }
+    }
+    article{
+        width: 800px;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between ;
+    }
+
+   
+}
